@@ -18,8 +18,8 @@ if (NOT EXISTS "${BRAINFUCK_SOURCE_FILE}")
     message(FATAL_ERROR "'BRAINFUCK_SOURCE_FILE' (${BRAINFUCK_SOURCE_FILE}) must exist")
 endif()
 
-# We do it in hexadecimal because CMake's regex is broken for
-# text containing '[' and ']', as well as lists
+# We do it in hexadecimal because CMake's regex and CMake lists
+# are broken for text containing '[' and ']'
 
 file(READ "${BRAINFUCK_SOURCE_FILE}" bf_code HEX)
 
