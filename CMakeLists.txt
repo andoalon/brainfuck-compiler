@@ -19,7 +19,7 @@ add_custom_command(
             "-DBRAINFUCK_SOURCE_FILE=${CMAKE_CURRENT_LIST_DIR}/main.bf"
             "-DBRAINFUCK_PREPROCESSED_OUTPUT_PATH=${CMAKE_CURRENT_BINARY_DIR}/main.bf.out"
             "-P" "${CMAKE_CURRENT_LIST_DIR}/preprocess-brainfuck.cmake"
-    COMMENT "Preprocessing brainfuck source code for use with the C preprocessor..."
+    COMMENT "Preprocessing brainfuck source code..."
     VERBATIM
 )
 

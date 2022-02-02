@@ -1,16 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define p /* + */ ++*a;
-#define m /* - */ --*a;
-#define i /* , */ *a = getchar();
-#define o /* . */ putchar(*a);
-#define r /* > */ ++a;
-#define l /* < */ --a;
-#define d /* [ */ while (*a != 0) {
-#define w /* ] */ --*a; }
-
-static uint8_t memory[16384]; /* static memory is zero-initialized */
+static uint8_t memory[30000]; /* static memory is zero-initialized */
 
 int main(void)
 {
